@@ -1,0 +1,478 @@
+/********************************************/
+/* BELOW 1200 PIXELS (landscape Tablets) */
+/********************************************/
+
+@media (max-width: 75em) {
+  h1 {
+    font-size: 4.2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .section__header {
+    font-size: 3.2rem;
+  }
+
+  .features {
+    margin: 0 9rem;
+  }
+
+  .operations {
+    max-width: 90rem;
+  }
+}
+
+/********************************************/
+/* BELOW 960 PIXELS (Tablets) */
+/********************************************/
+
+@media (max-width: 60em) {
+  h1 {
+    font-size: 3.4rem;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    padding: 1.25rem 2.6rem;
+  }
+
+  .nav {
+    padding: 0 4rem;
+  }
+
+  .nav__item {
+    margin-left: 0;
+  }
+
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 2.4rem;
+    margin-bottom: 2.6rem;
+  }
+
+  .nav__logo {
+    height: 4rem;
+  }
+
+  .nav__icon--open {
+    opacity: 1;
+  }
+
+  .nav__icon--close {
+    opacity: 1;
+  }
+
+  .nav__links {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.92);
+    height: 100vh;
+    width: 100vw;
+
+    /* animation */
+    /* transform: translateX(100%); */
+    transition: all 0.5s ease-in;
+    /* Hide nav */
+    /* 1) Hide the element visually */
+    opacity: 0;
+    /* 2) Make it un accessible to mouse and keyboard */
+    pointer-events: none;
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav--open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav__icon {
+    display: inline-block;
+    position: fixed;
+    z-index: 9999;
+    top: 1.2rem;
+    right: 5rem;
+  }
+
+  .section__header {
+    font-size: 2.6rem;
+  }
+
+  /* FEATURES */
+  .features__header {
+    font-size: 1.6rem;
+  }
+
+  .features {
+    column-gap: 2rem;
+    margin: 0 4rem;
+  }
+
+  /* OPERATIONS */
+  .operations__content {
+    /* JUST PRESENTATIONAL */
+    font-size: 1.7rem;
+    padding: 2.5rem 4rem 6.5rem 4rem;
+  }
+
+  .operations__tab {
+    font-size: 1.6rem;
+  }
+
+  .operations__header {
+    font-size: 2rem;
+  }
+
+  /* TESTIMONIALS */
+  .testimonial__text {
+    font-size: 1.5rem;
+  }
+
+  .footer__link {
+    font-size: 1.5rem;
+  }
+  /* MODAL WINDOW */
+
+  .modal__header {
+    font-size: 2.8rem;
+  }
+
+  .modal__form {
+    gap: 2rem;
+  }
+
+  .modal__form label {
+    font-size: 1.4rem;
+  }
+}
+
+/********************************************/
+/* BELOW 752 PIXELS (Small Tablets) */
+/********************************************/
+@media (max-width: 47em) {
+  /* general */
+  h1 {
+    font-size: 4rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .btn {
+    padding: 1rem 1rem;
+  }
+
+  .section {
+    padding: 8rem 3rem;
+  }
+
+  .section__description {
+    font-size: 1.6rem;
+  }
+
+  .section__header {
+    font-size: 2.2rem;
+  }
+
+  .btn--text {
+    font-size: 1.6rem;
+  }
+
+  /* nav */
+  .nav__logo {
+    height: 4.5rem;
+  }
+
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .nav__icon {
+    font-size: 4.5rem;
+  }
+
+  /* header */
+  .header {
+    padding-bottom: 8rem;
+    gap: 5rem;
+  }
+
+  .header__title {
+    grid-template-columns: 1fr;
+  }
+
+  .header__img {
+    display: none;
+  }
+
+  /* features */
+  .features {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .features__feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .features__img {
+    width: 85%;
+  }
+
+  .features__img--2 {
+    grid-row: 3/4;
+  }
+
+  .features__header {
+    font-size: 2rem;
+  }
+
+  /* operations */
+  .operations__tab {
+    font-size: 1.35rem;
+  }
+
+  .operations__header {
+    font-size: 1.8rem;
+  }
+
+  .operations__text {
+    text-align: start;
+  }
+
+  /* slider */
+  .slider__btn {
+    height: 5rem;
+    width: 5rem;
+    font-size: 3rem;
+  }
+
+  /* testimonials */
+  .testimonial__header {
+    font-size: 2.1rem;
+  }
+
+  .testimonial__text {
+    font-size: 1.3rem;
+  }
+
+  .testimonial__location {
+    text-align: start;
+  }
+
+  /* footer */
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__link {
+    font-size: 1.7rem;
+  }
+
+  .footer__item {
+    margin-right: 0;
+    margin-bottom: 1.6rem;
+  }
+
+  /* modal */
+  .modal__header {
+    font-size: 2.6rem;
+  }
+}
+
+/********************************************/
+/* BELOW 560 PIXELS (Phones) */
+/********************************************/
+@media (max-width: 35em) {
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 1.2rem 1.2rem;
+  }
+
+  /* nav */
+  .nav {
+    padding: 0 1.6rem;
+  }
+
+  .nav__logo {
+    height: 3.6rem;
+    /* margin-top: 1.2rem; */
+  }
+
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 1.8rem;
+  }
+
+  .nav__icon {
+    font-size: 4rem;
+    top: 2rem;
+    right: 4.2rem;
+  }
+
+  /* header */
+  .section__header {
+    font-size: 2rem;
+  }
+
+  /* features */
+  .features__feature {
+    width: 100%;
+  }
+
+  .features__img {
+    width: 100%;
+  }
+
+  .features__header {
+    font-size: 1.6rem;
+  }
+
+  /* operations */
+  .operations__header {
+    font-size: 1.5rem;
+  }
+
+  .operations__content--active {
+    grid-template-columns: 5rem 1fr;
+    column-gap: 2rem;
+    row-gap: 0.5rem;
+  }
+
+  .operations__content {
+    padding: 2.5rem 1.6rem 6rem 1.6rem;
+  }
+
+  .operations__icon {
+    height: 5.2rem;
+    width: 5.2rem;
+  }
+
+  .operations__tab {
+    border-radius: 50%;
+    font-size: 1.3rem;
+  }
+
+  .operations__text {
+    font-size: 1.4rem;
+  }
+
+  /* slider */
+  .slider {
+    /* margin-top: 2rem; */
+    height: 72rem;
+  }
+
+  .slider__btn {
+    height: 4.2rem;
+    width: 4.2rem;
+    font-size: 2.2rem;
+  }
+
+  .slide {
+    height: 100%;
+  }
+
+  /* testimonials */
+  .testimonial__header {
+    font-size: 1.8rem;
+  }
+
+  .testimonial__text {
+    font-size: 1.3rem;
+  }
+
+  .testimonial__name {
+    font-size: 1.3rem;
+  }
+
+  .testimonial__location {
+    font-size: 1rem;
+  }
+
+  .testimonial::before {
+    /* display: none; */
+    top: -3.7rem;
+    left: -4.8rem;
+    font-size: 10rem;
+  }
+
+  /* modal */
+  .modal {
+    max-width: 50rem;
+    padding: 4rem 3rem;
+  }
+
+  .modal__form {
+    gap: 1.5rem;
+  }
+
+  .btn--show-modal {
+    font-size: 1.4rem;
+  }
+
+  .modal__header {
+    font-size: 2rem;
+  }
+
+  .section--sign-up .btn {
+    font-size: 1.6rem;
+    padding: 2rem 3rem;
+  }
+
+  .btn--close-modal {
+    font-size: 3rem;
+  }
+
+  .modal__form label {
+    font-size: 1.4rem;
+  }
+
+  .modal__form input {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+  }
+
+  /* footer */
+  .footer__link {
+    font-size: 1.6rem;
+  }
+}
